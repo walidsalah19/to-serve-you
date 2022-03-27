@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".admin.add_employee"
+    android:background="@color/white">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="20dp"
+            app:cardMaxElevation="12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/white"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_below="@+id/imageView_view"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                >
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/logo"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    />
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/green1"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text=" إضافة موظف جديد "/>
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:id="@+id/username_edittext"
+                    android:textColor="@color/green1"
+                    android:textColorHint="@color/green1"
+                    android:background="@drawable/edittext_shape"
+                    android:padding="5dp"
+                    android:paddingStart="10dp"
+                    android:inputType="text"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_baseline_edit_24"
+                    android:hint=" اسم الموطف "
+                    android:ems="10"/>
+                <Spinner
+                    android:id="@+id/job_spinner"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_width="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="@dimen/_5sdp"
+                    android:background="@drawable/edittext_shape"/>
+                <EditText
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:id="@+id/admin_section_edittext"
+                android:textColor="@color/green1"
+                android:textColorHint="@color/green1"
+                android:background="@drawable/edittext_shape"
+                android:padding="5dp"
+                android:paddingStart="10dp"
+                android:inputType="text"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_baseline_edit_24"
+                android:hint=" القسم "
+                android:ems="10"/>
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:id="@+id/employee_email_edittext"
+                    android:textColor="@color/green1"
+                    android:textColorHint="@color/green1"
+                    android:background="@drawable/edittext_shape"
+                    android:padding="5dp"
+                    android:paddingStart="10dp"
+                    android:inputType="textEmailAddress"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_baseline_email_24"
+                    android:hint=" البريد الالكتروني "
+                    android:ems="10"/>
+
+
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:id="@+id/employee_password_text"
+                    android:textColor="@color/green1"
+                    android:inputType="textPassword"
+                    android:textColorHint="@color/green1"
+                    android:hint=" كلمة المرور  "
+                    android:paddingStart="10dp"
+                    android:drawablePadding="10dp"
+                    android:background="@drawable/edittext_shape"
+                    android:padding="5dp"
+                    android:gravity="end"
+                    android:drawableStart="@drawable/ic_baseline_lock_24"
+                    android:ems="10"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="إظهار كلمة المرور"
+                        android:textColor="@color/green1"
+                        android:textSize="14sp"
+                        android:layout_weight="1"
+                        android:gravity="center|start"
+                        >
+                    </TextView>
+                    <CheckBox
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/show_password_emp"
+                        android:layout_weight="1"
+                        >
+                    </CheckBox>
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:id="@+id/admin_add_employee"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:background="@drawable/button_shape"
+                    android:text="إضافة موظف  "/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+
+
+</FrameLayout>

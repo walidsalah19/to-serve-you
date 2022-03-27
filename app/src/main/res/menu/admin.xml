@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/admin_reports"
+        android:title=" البلاغات "
+        android:icon="@drawable/ic_baseline_report_24"
+        />
+    <item android:id="@+id/add_employee"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_add_24"
+        android:title=" إضافة موظف "
+        >
+   </item>
+    <item android:id="@+id/search_device"
+        android:title=" البحث عن جهاز  "
+        android:icon="@drawable/ic_baseline_search_24"
+        >
+    </item>
+    <item android:id="@+id/admin_logout"
+        android:icon="@drawable/ic_baseline_logout_24"
+        android:title=" تسجيل الخروج "
+
+        />
+</menu>

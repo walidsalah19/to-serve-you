@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/appbar_main"
+        android:background="@color/green3"
+        app:titleTextColor="@color/white"
+        />
+
+    <FrameLayout
+
+        android:id="@+id/main_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appbar_main"
+        android:background="@color/white"
+        android:layout_above="@id/bottomNavigationView">
+        <include android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/fragment_admin_get_reports">
+        </include>
+    </FrameLayout>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:itemTextColor="@color/green1"
+        app:itemIconTint="@color/green1"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/admin"
+
+        />
+</RelativeLayout>

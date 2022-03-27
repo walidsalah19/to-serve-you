@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".it_employee.send_report_solve">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/green1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text=" حل المشكله "/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:hint="حل المشكله "
+            android:gravity="top"
+            android:textSize="@dimen/_16sdp"
+            android:textColorHint="@color/green1"
+            android:textColor="@color/green1"
+            android:padding="@dimen/_5sdp"
+            android:inputType="textMultiLine"
+            android:id="@+id/it_employee_problem_solve"
+            android:background="@drawable/edittext_shape"
+            android:layout_margin="@dimen/_10sdp">
+        </EditText>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/it_send_problem_solve"
+            android:layout_margin="10dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/button_shape"
+            android:text="ارسال "
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18sdp"
+            android:layout_below="@id/it_employee_problem_solve">
+        </androidx.appcompat.widget.AppCompatButton>
+       </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

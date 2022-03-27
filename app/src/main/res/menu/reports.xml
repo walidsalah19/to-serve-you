@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/report"
+        android:title=" بلاغات تم حلها "
+        android:icon="@drawable/ic_baseline_report_24">
+    </item>
+    <item android:id="@+id/new_report"
+        android:title=" بلاغات جديدة "
+        android:icon="@drawable/ic_baseline_report_24">
+    </item>
+    <item android:id="@+id/reject_report"
+        android:title=" بلاغات مرفوضة "
+        android:icon="@drawable/ic_baseline_report_24">
+    </item>
+</menu>

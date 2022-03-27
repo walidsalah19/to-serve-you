@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.reject_report_reson">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/green1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text=" رفض الطلب "/>
+    <EditText
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/_100sdp"
+        android:hint="سبب رفض الطلب "
+        android:gravity="top"
+        android:textSize="@dimen/_16sdp"
+        android:textColorHint="@color/green1"
+        android:textColor="@color/green1"
+        android:padding="@dimen/_5sdp"
+       android:inputType="textMultiLine"
+       android:id="@+id/report_reject_reason"
+        android:background="@drawable/edittext_shape"
+        android:layout_margin="@dimen/_10sdp">
+   </EditText>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:id="@+id/send_report_reject_reason"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/button_shape"
+            android:layout_below="@id/report_reject_reason"
+            android:text="ارسال "/>
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>
